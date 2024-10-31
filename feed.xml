@@ -3,7 +3,7 @@
     <title>Life Unfiltered</title>
     <link href="https://tushbit.pages.dev/feed.xml" rel="self" />
     <link href="https://tushbit.pages.dev" />
-    <updated>2024-10-31T18:23:41+05:30</updated>
+    <updated>2024-10-31T18:41:49+05:30</updated>
     <author>
         <name>Tushar Bansal</name>
     </author>
@@ -16,15 +16,19 @@
         </author>
         <link href="https://tushbit.pages.dev/opportunistic-cross-docking.html"/>
         <id>https://tushbit.pages.dev/opportunistic-cross-docking.html</id>
+        <media:content url="https://tushbit.pages.dev/media/posts/3/SAP-EWM-Cross-Docking-Featured-Image.png" medium="image" />
+            <category term="SAP-EWM"/>
 
         <updated>2024-10-31T18:17:37+05:30</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://tushbit.pages.dev/media/posts/3/SAP-EWM-Cross-Docking-Featured-Image.png" alt="SAP EWM Cross Docking " />
                     Types of Opportunistic Deployments There are two main types of opportunistic deployments: In a Push Deployment, if a sales order for the product is pending, the PUTAWAY process will go directly from GR-Zone to GI-ZONE. In a Pull Deployment, if a product is pending for&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://tushbit.pages.dev/media/posts/3/SAP-EWM-Cross-Docking-Featured-Image.png" class="type:primaryImage" alt="SAP EWM Cross Docking " /></p>
                 <h2>Types of Opportunistic Deployments</h2>
 <p>There are two main types of opportunistic deployments:</p>
 <ol>
