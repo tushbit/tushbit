@@ -3,14 +3,14 @@
     <title>Life Unfiltered</title>
     <link href="https://tush.pages.dev/feed.xml" rel="self" />
     <link href="https://tush.pages.dev" />
-    <updated>2024-10-31T19:14:01+05:30</updated>
+    <updated>2024-10-31T19:34:13+05:30</updated>
     <author>
         <name>Tushar Bansal</name>
     </author>
     <id>https://tush.pages.dev</id>
 
     <entry>
-        <title>Stremio Setup Guide With Real-Debrid</title>
+        <title>Stremio Setup Guide: Streaming Movies and TV on Non-iOS Devices</title>
         <author>
             <name>Tushar Bansal</name>
         </author>
@@ -23,147 +23,83 @@
             <summary>
                 <![CDATA[
                         <img src="https://tush.pages.dev/media/posts/4/Stremio-GuideforRD.png" alt="" />
-                    Opening Notes (important stuff, please read) This configuration of the Stremio app will allow you to stream movies/TV from most devices, with the exception being IOS devices such as the iPhone and iPad. If you want to stream from those devices, this guide is not&hellip;
+                    Important: This Stremio configuration guide is for streaming movies/TV on Windows, Mac, Android, FireOS (including Fire Stick and Fire TV), Linux, AndroidTV, and Steam Deck. It does not support iOS devices (iPhone, iPad). If you're an iOS user, this guide isn't applicable. To complete this&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <p><img src="https://tush.pages.dev/media/posts/4/Stremio-GuideforRD.png" class="type:primaryImage" alt="" /></p>
-                <div class="w-fit m-0 border-0 bg-transparent cursor-pointer relative"><span style="color: var(--headings-color); font-family: var(--font-base); font-size: 1.80203em; font-weight: var(--font-weight-bold); letter-spacing: var(--letter-spacing);">Opening Notes (important stuff, please read)</span></div>
-<div class="text-neutral-content">
-<div class="mb-sm  mb-xs px-md xs:px-0 overflow-hidden" data-post-click-location="text-body">
-<div id="t3_yi5jdw-post-rtjson-content" class="md text-14">
+                <blockquote>
+<p><strong>Important:</strong> This Stremio configuration guide is for streaming movies/TV on Windows, Mac, Android, FireOS (including Fire Stick and Fire TV), Linux, AndroidTV, and Steam Deck. It <strong>does not support iOS devices</strong> (iPhone, iPad). If you're an iOS user, this guide isn't applicable.</p>
+</blockquote>
+<p>To complete this setup, you will need a <strong>Windows, Mac, Linux, or Android</strong> device. </p>
+<p><strong>FireOS and Linux</strong> users: Check the additional information provided after the Stremio setup guide. You must complete the setup steps with one of the supported devices first.</p>
+<h2>Stremio Setup Guide</h2>
+<h3>Part 1: Install Stremio</h3>
+<ol>
+<li><strong>Windows/Mac Users</strong>: Visit <a rel="noopener" target="_new" href="https://www.stremio.com/">stremio.com</a> to download the relevant client for your platform.</li>
+<li><strong>Android Users</strong>: Install Stremio through the <strong><a href="https://play.google.com/store/apps/details?id=com.stremio.one">Google Play Store</a></strong>. If it's unavailable in your country, use the website link instead.</li>
+<li><strong>Account Setup</strong>: Open Stremio and sign up using your email or Facebook account.</li>
+</ol>
+<h3>Part 2: Real Debrid Setup</h3>
+<ol>
+<li>Go to <strong><a href="http://real-debrid.com/?id=8906258">Real-Debrid</a></strong> and sign up for an account.</li>
+<li>Navigate to the <strong>Premium Offers</strong> section, choose a package, and subscribe. Using <strong>Amazon Pay</strong> can be the most convenient option for payment if you have an Amazon account.</li>
+</ol>
+<h3>Part 3: Torrentio Setup</h3>
+<ol>
+<li>Go to <a target="_blank" rel="noopener noreferrer">Torrentio Lite - Stremio Addon</a> or <a href="https://torrentio.strem.fun/configure" target="_blank" rel="noopener noreferrer">Torrentio</a> (Stremio add-on).</li>
+<li>Scroll down, select <strong>Debrid Provider</strong> and choose <strong>Real Debrid</strong> from the drop-down menu. This will prompt a new text box to appear.</li>
+<li><strong>API Key</strong>: Copy your API key from <a href="https://torrentio.strem.fun/configure" target="_blank" rel="nofollow noopener noreferrer">Real-debrid API Token</a> and paste it into the "RealDebrid API Key" box.</li>
+<li><strong>Debrid Options</strong>: Check "Don't show download to debrid links" and "Don't Show debrid catalog"</li>
+<li><strong>Install Add-on</strong>: Click <strong>Install</strong> at the bottom. This will open Stremio and prompt an "Install Addon" window. Click the green install button.</li>
+</ol>
+<p><em>Optional but Recommended</em>: In Stremio, go to the puzzle piece icon in the top right to view <strong>My Addons</strong>. Uninstall <strong>WatchHub</strong> to declutter your stream list.</p>
+<hr>
+<p>Now you’re ready to install Stremio on other devices (excluding iOS). Simply log in to your Stremio account to start streaming movies/TV.</p>
+<hr>
+<h2>Additional Setup for FireOS Devices (Fire Stick, Fire TV)</h2>
+<p>Once you've completed the initial setup, follow these steps to install Stremio on FireOS:</p>
+<ol>
+<li><strong>Watch Setup Video</strong>: Refer to <a rel="noopener" target="_new" href="https://youtu.be/U1o-scADuIg">this video</a> for installation instructions.</li>
+<li>Log into your Stremio account. This will sync your setup, including shows and settings, across all devices. <em>Note</em>: Some FireOS devices may not support 4K streaming.</li>
+</ol>
+<blockquote>
+<p><strong>Update (10/16/2023)</strong>: Fire Stick users should download the <strong>Android TV apk</strong> from the Stremio downloads section for an improved UI. This update was made after the video was created and provides a better user experience on smart TVs.</p>
+</blockquote>
+<hr>
+<h2>Linux Setup</h2>
+<ol>
+<li>Use the <strong>Flatpak</strong> installer for Stremio on Linux.
 <ul>
-<li>
-<p>This configuration of the Stremio app will allow you to stream movies/TV from most devices, with the exception being IOS devices such as the iPhone and iPad. If you want to stream from those devices, this guide is not for you.</p>
+<li>At the time of creating this guide, there were no known setup issues with Linux devices. However, if you encounter issues, it may be due to custom defaults or settings.</li>
+</ul>
 </li>
-<li>
-<p>You can use this Stremio configuration to stream movies/TV on most other platforms, including Windows, Mac, Android, FireOS (includes Fire Stick and Fire TV), Linux, AndroidTV, and even the Steam Deck.</p>
-</li>
-<li>
-<p>However, the Stremio setup guide will require that you use a Windows, Mac, Linux, or Android device. Please don't attempt the setup steps on another device.</p>
-</li>
-<li>
-<p>Additional information for FireOS (includes Fire Stick and Fire TV) and Linux devices is located below the Stremio setup guide, but you need to go through the Stremio setup guide beforehand with a required device (Refer to previous bullet point).</p>
+<li><strong>Alternative</strong>: Complete the setup on a recommended device first, then install and log into the Stremio app on your Linux device to sync settings.</li>
+</ol>
+<hr>
+<h2>Additional Information</h2>
+<ul>
+<li><strong>VPN</strong>: No VPN is needed for this configuration.</li>
+<li><strong>Account Sharing</strong>: Only share your Stremio account with people on the same WiFi network. Sharing across different networks may result in a suspension of your Real Debrid account.</li>
+</ul>
+<h3>Bugs/Glitches and Troubleshooting</h3>
+<ul>
+<li><strong>No Streams Found</strong>: Occasionally, a show or movie may display "No streams found." This issue typically resolves on its own.</li>
+<li><strong>Black Screen but Audio</strong>: If the video is black but audio is still playing, select a stream with a different resolution.</li>
+<li><strong>No Streams Available</strong>: If no streams are appearing or working, try the following:
+<ul>
+<li>Check if your Real Debrid subscription has expired by logging into your account.</li>
+<li>Verify if Real Debrid servers are down or undergoing maintenance. In this case, try again after an hour.</li>
+<li>Recheck the steps to ensure there were no errors during setup.</li>
+</ul>
 </li>
 </ul>
+<p>If you’re still having trouble, feel free to reach out.</p>
+<p>Special thanks to <strong>u/OnlyTheCruxes</strong> for the insights.</p>
 <p> </p>
-<h1 class="text-24 xs:text-20">Stremio Setup Guide</h1>
-<p>Part 1: Stremio</p>
-<ol>
-<li>
-<p>For Windows/Mac users - Go to <a rpl="" class="relative pointer-events-auto a cursor-pointer
-  
-  
-  
-  
-  underline
-  " href="https://www.stremio.com/" rel="noopener nofollow ugc" target="_blank">https://www.stremio.com/</a> and download the relevant client for your platform</p>
-</li>
-<li>
-<p>For Android users - Install Stremio through the Google Play Store: Stremio - Apps on Google Play (<em>Not available in some countries - use website</em>)</p>
-</li>
-<li>
-<p>Open Stremio and sign up with email or Facebook</p>
-</li>
-</ol>
-<p>Part 2: Real Debrid</p>
-<ol>
-<li>
-<p>Go to <a href="http://real-debrid.com/?id=8906258">Real-Debrid</a></p>
-</li>
-<li>
-<p>Sign up</p>
-</li>
-<li>
-<p>Go to Premium Offers</p>
-</li>
-<li>
-<p>Choose a package and subscribe. I found that using Amazon Pay as the payment method is the most convenient (if you have an Amazon account)</p>
-</li>
-</ol>
-<p>Part 3: Torrentio</p>
-<ol>
-<li>
-<p>Go to <a rpl="" class="relative pointer-events-auto a cursor-pointer
-  
-  
-  
-  
-  underline
-  " href="https://torrentio.strem.fun/lite/configure" rel="noopener nofollow ugc" target="_blank">Torrentio Lite - Stremio Addon</a></p>
-</li>
-<li>
-<p>Towards the bottom of the page, select the "Debrid Provider" option and select "Real Debrid" from the drop-down menu. This will cause a new text box to appear underneath.</p>
-</li>
-<li>
-<p>Copy the API key from this link <a href="https://real-debrid.com/apitoken" target="_blank" rel="nofollow ugc noopener noreferrer">Real-debrid Api Token</a> and paste it into the "RealDebrid API Key**"** box</p>
-</li>
-<li>
-<p>In the Debrid Options menu: Check the box "Don't show download to debrid links" and leave the other boxes unchecked.</p>
-</li>
-<li>
-<p>Click "Install" at the bottom. It should open the Stremio app and prompt you with an "Install Addon" window. Click the green install button at the bottom.</p>
-</li>
-<li>
-<p>Optional but highly Recommended - In Stremio, click the puzzle piece in the top right to view your addons. Click "My Addons" and uninstall the "WatchHub" addon. It's an eyesore and it clutters your streams list.</p>
-</li>
-</ol>
-<p>Now that you have completed the setup, you may install Stremio on any device of your choice (excluding IOS) and log in to your account to start streaming Movies/TV. Refer to the section below for Stremio installation on FireOS devices (Fire Stick, FireTV).</p>
 <p> </p>
-<h1 class="text-24 xs:text-20">FireOS devices (Fire Stick, FireTV)</h1>
-<p>After you have gone through the setup on another device, watch this video on how to install Stremio on your FireOS device <a rpl="" class="relative pointer-events-auto a cursor-pointer
-  
-  
-  
-  
-  underline
-  " href="https://youtu.be/U1o-scADuIg" rel="noopener nofollow ugc" target="_blank">https://youtu.be/U1o-scADuIg</a> and then log into your account in the Stremio app. At this point you're good to stream. It will download everything that you just set up and sync your shows across all devices. However, some FireOS devices may not be capable of 4k streaming.</p>
-<p>Edit 10/16/2023 - if you are on firestick, make sure to download the Android TV apk from the Stremio downloads section. The youtube video linked above was created before Stremio had an Android TV version. The UI is much improved over the base android UI for use on a smart tv.</p>
 <p> </p>
-<h1 class="text-24 xs:text-20">Linux</h1>
-<p>Use the flatpak and everything should work. At the time of making this guide, I had issues in the setup process on Linux but I'm pretty sure that was my fault for having weird defaults on my Arch install. You should be able to complete the setup process on Linux without issues and streaming is guaranteed to work. In the case that you run into issues, Just complete the setup steps on a recommended device first, then install and log into the Stremio app on your Linux device.</p>
-<p> </p>
-<h1 class="text-24 xs:text-20">Additional information</h1>
-<p>YOU DO NOT NEED A VPN.</p>
-<p>Account sharing: You should only share your Stremio account with people who are connected to the same WiFi network as you. If you do not follow this rule, your Real Debrid account may be suspended.</p>
-<p>Bugs/Glitches:</p>
-<ol>
-<li>
-<p>Sometimes, an episode of a show or a movie will display "No streams found" even though it should be available. This has only happened to me a handful of times, but the problem will resolve itself eventually.</p>
-</li>
-<li>
-<p>If the picture is black but the audio is still playing, you should go back and select a stream with a different resolution.</p>
-</li>
-</ol>
-<p>Issue: No streams are appearing at all, or none of them work. Here are the possible explanations:</p>
-<ol>
-<li>
-<p>Your Real Debrid Subscription has expired. Go to <a rpl="" class="relative pointer-events-auto a cursor-pointer
-  
-  
-  
-  
-  underline
-  " href="https://real-debrid.com/" rel="noopener nofollow ugc" target="_blank">Real-Debrid</a> and check your account status.</p>
-</li>
-<li>
-<p>Real Debrid servers are down/undergoing maintenance. Wait an hour or so, and then try again.</p>
-</li>
-<li>
-<p>You made a mistake while following the guide. My DMs are open if you can't figure it out. I'll probably try to help.</p>
-</li>
-</ol>
-<p>Credit to <a rpl="" class=" a cursor-pointer
-  
-  
-  
-  
-  hover:underline
-  " href="https://www.reddit.com/user/OnlyTheCruxes/">u/OnlyTheCruxes</a>.</p>
-</div>
-</div>
-</div>
             ]]>
         </content>
     </entry>
