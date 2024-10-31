@@ -2,10 +2,10 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "Life Unfiltered",
     "description": "",
-    "home_page_url": "https://tushbit.github.io",
-    "feed_url": "https://tushbit.github.io/feed.json",
+    "home_page_url": "https://tushbit.pages.dev",
+    "feed_url": "https://tushbit.pages.dev/feed.json",
     "user_comment": "",
-    "icon": "https://tushbit.github.io/media/website/logo_transparent.png",
+    "icon": "https://tushbit.pages.dev/media/website/logo_transparent.png",
     "author": {
         "name": "Tushar Bansal"
     },
