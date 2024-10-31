@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="https://tushbit.pages.dev/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://tush.pages.dev/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <url>
-<loc>https://tushbit.pages.dev/</loc>
+<loc>https://tush.pages.dev/</loc>
 </url>
 <url>
-<loc>https://tushbit.pages.dev/contact-us.html</loc>
+<loc>https://tush.pages.dev/contact-us.html</loc>
 <lastmod>2024-10-31T16:39:54+05:30</lastmod>
 </url>
 <url>
-<loc>https://tushbit.pages.dev/opportunistic-cross-docking.html</loc>
+<loc>https://tush.pages.dev/opportunistic-cross-docking.html</loc>
 <lastmod>2024-10-31T18:41:49+05:30</lastmod>
 <image:image>
-<image:loc>https://tushbit.pages.dev/media/posts/3/SAP-EWM-Cross-Docking-Featured-Image.png</image:loc>
+<image:loc>https://tush.pages.dev/media/posts/3/SAP-EWM-Cross-Docking-Featured-Image.png</image:loc>
 <image:title><![CDATA[SAP EWM Cross Docking ]]></image:title>
 </image:image>
 </url>
 <url>
-<loc>https://tushbit.pages.dev/privacy-policy.html</loc>
+<loc>https://tush.pages.dev/privacy-policy.html</loc>
 <lastmod>2024-10-31T17:12:36+05:30</lastmod>
 </url>
 </urlset>
