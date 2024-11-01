@@ -3,12 +3,190 @@
     <title>Life Unfiltered</title>
     <link href="https://tush.pages.dev/feed.xml" rel="self" />
     <link href="https://tush.pages.dev" />
-    <updated>2024-11-01T14:29:22+05:30</updated>
+    <updated>2024-11-01T15:59:00+05:30</updated>
     <author>
         <name>Tushar Bansal</name>
     </author>
     <id>https://tush.pages.dev</id>
 
+    <entry>
+        <title>SAP EWM Cartonization Planning: Step-by-Step Configuration Guide</title>
+        <author>
+            <name>Tushar Bansal</name>
+        </author>
+        <link href="https://tush.pages.dev/posts/sap-ewm-cartonization-planning-step-by-step-configuration-guide/"/>
+        <id>https://tush.pages.dev/posts/sap-ewm-cartonization-planning-step-by-step-configuration-guide/</id>
+        <media:content url="https://tush.pages.dev/media/posts/6/Cartonization_Planning_SAP_EWM_Thumbnail.png" medium="image" />
+            <category term="SAP-EWM"/>
+
+        <updated>2024-11-01T15:59:00+05:30</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://tush.pages.dev/media/posts/6/Cartonization_Planning_SAP_EWM_Thumbnail.png" alt="SAP EWM Cartonization Planning" />
+                    This guide provides a detailed configuration tutorial for setting up Cartonization Planning in SAP EWM. To start with Cartonization Planning, activate the following BC sets: Define packaging materials with specific dimensions and weight. Here’s the information for three box types: Define the following POSC (Process&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://tush.pages.dev/media/posts/6/Cartonization_Planning_SAP_EWM_Thumbnail.png" class="type:primaryImage" alt="SAP EWM Cartonization Planning" /></p>
+                <p>This guide provides a detailed configuration tutorial for setting up Cartonization Planning in SAP EWM.</p>
+<h3>Step 1: Activate BC Sets</h3>
+<p>To start with Cartonization Planning, activate the following BC sets:</p>
+<ul>
+<li><strong>SCPR20</strong> &gt;
+<ul>
+<li><code>/SCWM/CAP_WORK_CENTER_LAYOUT</code></li>
+<li><code>/SCWM/CAP</code></li>
+<li><code>/SCWM/PRC_TCP1</code></li>
+</ul>
+</li>
+</ul>
+<h3>Step 2: Create Packaging Materials</h3>
+<p>Define packaging materials with specific dimensions and weight. Here’s the information for three box types:</p>
+<table>
+<thead>
+<tr>
+<th>Material</th>
+<th>Length (cm)</th>
+<th>Width (cm)</th>
+<th>Height (cm)</th>
+<th>Weight (Kg)</th>
+<th>Volume (cm³)</th>
+<th>HU Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Small Box</td>
+<td>10</td>
+<td>10</td>
+<td>4.5</td>
+<td>0.2</td>
+<td>450</td>
+<td>BOXE</td>
+</tr>
+<tr>
+<td>Medium Box</td>
+<td>10</td>
+<td>10</td>
+<td>6.5</td>
+<td>0.3</td>
+<td>650</td>
+<td>BOXE</td>
+</tr>
+<tr>
+<td>Large Box</td>
+<td>10</td>
+<td>10</td>
+<td>8.5</td>
+<td>0.4</td>
+<td>850</td>
+<td>BOXE</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Material Codes</strong>:
+<ul>
+<li><strong>SMALL-BOX</strong></li>
+<li><strong>MID-BOX</strong></li>
+<li><strong>LARGE-BOX</strong></li>
+<li><strong>MM01</strong> -&gt; S4H_SWCL_01, S4H_SWCL_02, S4H_SWCL_03</li>
+</ul>
+</li>
+</ul>
+<h3>Step 3: Configure POSC for Cartonization</h3>
+<p>Define the following POSC (Process Oriented Storage Control) steps in OBSP:</p>
+<ul>
+<li><strong>OUB01</strong>: Pick</li>
+<li><strong>OUB02</strong>: Pack</li>
+<li><strong>OUB03</strong>: Staging (ST)</li>
+<li><strong>OUB04</strong>: Loading</li>
+</ul>
+<h3>Step 4: Define Packaging Profile - PSHU</h3>
+<p>Set up a <strong>Packaging Profile (PSHU)</strong> to handle packaging units in the system. <figure class="post__image"><img loading="lazy"  src="https://res.cloudinary.com/dlprgfksb/image/upload/v1730454621/SAP_EWM_Cartonization-01_yupq1s.png" alt="SAP EWM Cartonization Define PSHU" width="1920" height="1080" data-is-external-image="true"></figure>
+<h3>Step 5: Define WOCR for Activity Area</h3>
+<figure class="post__image">Define <strong>Work Order Creation Rules (WOCR)</strong> associated with the relevant activity areas. <img  src="https://res.cloudinary.com/dlprgfksb/image/upload/v1730454623/SAP_EWM_Cartonization-02_kxav9e.png" alt="SAP EWM Cartonization Define WOCR" width="1920" height="1080" data-is-external-image="true"><img loading="lazy" class="post__image" src="https://res.cloudinary.com/dlprgfksb/image/upload/v1730454617/SAP_EWM_Cartonization-03_txd18a.png" alt="SAP EWM Cartonization WOCR Activity Area" width="1920" height="1080" data-is-external-image="true"></figure>
+<h3>Step 6: Set Up Logical Bins and Generate Activity Area</h3>
+<ol>
+<li>Define start and end bins Storage type and bin using logical names (e.g., <strong>STRT, STRT-01-01</strong>). <figure class="post__image"><img loading="lazy"  src="https://res.cloudinary.com/dlprgfksb/image/upload/v1730454616/SAP_EWM_Cartonization-04_viizam.png" alt="SAP EWM Cartonization Define Start and End logical Bin Storage Type" width="1920" height="1080" data-is-external-image="true"></figure></li>
+<li>Go to <strong>/n/scwm/SBST</strong> for bin sorting. </li>
+<li>Assign start and end bins to the activity area through <strong>/n/scwm/seba</strong>. <figure class="post__image"><img loading="lazy"  src="https://res.cloudinary.com/dlprgfksb/image/upload/v1730454617/SAP_EWM_Cartonization-05_v0kt8b.png" alt="SAP EWM Cartonization Assign start and end bins" width="1920" height="1080" data-is-external-image="true"></figure></li>
+</ol>
+<h3>Step 7: Define Work Center</h3>
+<p>Create a work center, such as <strong>SCAR</strong>, in the system to manage packaging activities. <figure class="post__image"><img loading="lazy"  src="https://res.cloudinary.com/dlprgfksb/image/upload/v1730454617/SAP_EWM_Cartonization-06_ckzyzc.png" alt="SAP EWM - Define Work centre – SCAR " width="1920" height="1080" data-is-external-image="true"></figure>
+<h3>Step 8: Create Pack Specifications</h3>
+<p>Define pack specifications for each box size:</p>
+<ul>
+<li><strong>Transaction</strong>: /n/scwm/packspec</li>
+<li><strong>Specification Details</strong>:</li>
+</ul>
+<table style="border-collapse: collapse; width: 119.943%; height: 296px;">
+<thead>
+<tr>
+<th style="width: 15.0951%;">Material</th>
+<th style="width: 13.6688%;">Length (cm)</th>
+<th style="width: 12.3613%;">Width (cm)</th>
+<th style="width: 13.3122%;">Height (cm)</th>
+<th style="width: 13.6688%;">Weight (Kg)</th>
+<th style="width: 14.5008%;">Volume (cm³)</th>
+<th style="width: 17.4723%;">Pack Spec</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="width: 15.0951%;">Small Box</td>
+<td style="width: 13.6688%;">10</td>
+<td style="width: 12.3613%;">10</td>
+<td style="width: 13.3122%;">4.5</td>
+<td style="width: 13.6688%;">0.2</td>
+<td style="width: 14.5008%;">450</td>
+<td style="width: 17.4723%;">10000026</td>
+</tr>
+<tr>
+<td style="width: 15.0951%;">Medium Box</td>
+<td style="width: 13.6688%;">10</td>
+<td style="width: 12.3613%;">10</td>
+<td style="width: 13.3122%;">6.5</td>
+<td style="width: 13.6688%;">0.3</td>
+<td style="width: 14.5008%;">650</td>
+<td style="width: 17.4723%;">10000027</td>
+</tr>
+<tr>
+<td style="width: 15.0951%;">Large Box</td>
+<td style="width: 13.6688%;">10</td>
+<td style="width: 12.3613%;">10</td>
+<td style="width: 13.3122%;">8.5</td>
+<td style="width: 13.6688%;">0.4</td>
+<td style="width: 14.5008%;">850</td>
+<td style="width: 17.4723%;">10000028</td>
+</tr>
+</tbody>
+</table>
+<figure class="post__image"><img loading="lazy"  src="https://res.cloudinary.com/dlprgfksb/image/upload/v1730454617/SAP_EWM_Cartonization-07_elj2hg.png" alt="SAP EWM Cartonization Packspecs" width="1920" height="1080" data-is-external-image="true"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://res.cloudinary.com/dlprgfksb/image/upload/v1730454623/SAP_EWM_Cartonization-08_cizqil.png" alt="SAP EWM Cartonization Packspecs" width="1920" height="1080" data-is-external-image="true"></figure>
+<p>Repeat this step for <strong>LARGE-BOX</strong> and <strong>MID-BOX</strong> as needed.</p>
+<h3>Step 9: Define Package Building Profile</h3>
+<p>Go to <strong>SPRO &gt; SCMEWM &gt; EWM &gt; Goods Issue Process &gt; Cartonization Planning &gt; Define Package Building Profile</strong> to define the profile. <figure class="post__image"><img loading="lazy"  src="https://res.cloudinary.com/dlprgfksb/image/upload/v1730454617/SAP_EWM_Cartonization-09_k9hxie.png" alt="SAP EWM Cartonization Define Package Building Profile" width="1920" height="1080" data-is-external-image="true"></figure>
+<h3>Step 10: Define Number Ranges for PSHU Identification</h3>
+<p>Configure number ranges for the identification of <strong>PSHU (Packing Handling Units)</strong> at the warehouse level. <figure class="post__image"><img loading="lazy"  src="https://res.cloudinary.com/dlprgfksb/image/upload/v1730454622/SAP_EWM_Cartonization-10_wdotl6.png" alt="SAP EWM Cartonization" width="1920" height="1080" data-is-external-image="true"></figure>
+<h3>Step 11: Define Algorithm Profiles for Cartonization Planning</h3>
+<figure class="post__image">Set up algorithm profiles for cartonization planning. If using the standard profile, only maintain your warehouse number without assigning additional values. and Define access sequence of algorithm profile  <img  src="https://res.cloudinary.com/dlprgfksb/image/upload/v1730454618/SAP_EWM_Cartonization-11_ovwxqt.png" alt="SAP EWM Cartonization Define Algorithm Profiles" width="1920" height="1080" data-is-external-image="true"><img loading="lazy" class="post__image" src="https://res.cloudinary.com/dlprgfksb/image/upload/v1730454620/SAP_EWM_Cartonization-12_la4tfy.png" alt="SAP EWM Cartonization" width="1920" height="1080" data-is-external-image="true"></figure>
+<h3>Step 12: Determine Algorithm Profiles</h3>
+<p>Go to <strong>/n/scwm/cappdet</strong> to assign algorithm profiles relevant to cartonization. <figure class="post__image"><img loading="lazy"  src="https://res.cloudinary.com/dlprgfksb/image/upload/v1730454616/SAP_EWM_Cartonization-13_q4sm4k.png" alt="SAP EWM Cartonization" width="1920" height="1080" data-is-external-image="true"></figure>
+<h3>Step 13: Define and Determine Process Profiles</h3>
+<figure class="post__image">Define process profiles to manage the cartonization process, then determine their use in the SAP EWM system. <img  src="https://res.cloudinary.com/dlprgfksb/image/upload/v1730454617/SAP_EWM_Cartonization-14_tytest.png" alt="SAP EWM Cartonization" width="1920" height="1080" data-is-external-image="true"><img loading="lazy" class="post__image" src="https://res.cloudinary.com/dlprgfksb/image/upload/v1730454622/SAP_EWM_Cartonization-15_mmyyke.png" alt="SAP EWM Cartonization" width="1920" height="1080" data-is-external-image="true"></figure>
+<h3>Step 14: Configure Cartonization Steps in POSC</h3>
+<figure class="post__image">Set up cartonization steps in <strong>POSC</strong> using <strong>OBSP</strong> to ensure efficient cartonization in the packing process. <img  src="https://res.cloudinary.com/dlprgfksb/image/upload/v1730454617/SAP_EWM_Cartonization-16_daqorp.png" alt="SAP EWM Cartonization POSC" width="1920" height="1080" data-is-external-image="true"><img loading="lazy" class="post__image" src="https://res.cloudinary.com/dlprgfksb/image/upload/v1730454623/SAP_EWM_Cartonization-17_f5emtf.png" alt="SAP EWM Cartonization POSC" width="1920" height="1080" data-is-external-image="true"></figure><figure class="post__image"><img loading="lazy"  src="https://res.cloudinary.com/dlprgfksb/image/upload/v1730454622/SAP_EWM_Cartonization-18_xu2bi7.png" alt="SAP EWM Cartonization POSC " width="1920" height="1080" data-is-external-image="true"></figure>
+<h3>Step 15: Generate Purchase Order and Create Inbound Delivery</h3>
+<ol>
+<li>Generate a <strong>Purchase Order (PO)</strong>.</li>
+<li>Create an inbound delivery for the materials created.</li>
+<li>Go to <strong>/n/scwm/Capdlv</strong>. <figure class="post__image"><img loading="lazy"  src="https://res.cloudinary.com/dlprgfksb/image/upload/v1730454626/SAP_EWM_Cartonization-19_zgsuuo.png" alt="SAP EWM Cartonization Success  " width="2880" height="1800" data-is-external-image="true"></figure><em>Verify that the system proposes the planned <strong>Handling Unit (HU)</strong> based on cartonization settings.</em></li>
+</ol>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Basic Kodi Setup Guide: Installing Fen Light Add-On, CocoScrapers, and Fentastic Skin</title>
         <author>
